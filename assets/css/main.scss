@@ -1,0 +1,100 @@
+@import "./global";
+
+// Headder style 
+header{
+    .logo {
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0px;
+        background-color: $secondaryBg;
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    }
+    .header-content {
+        padding: 0px;
+        .navbar{
+            padding: 0px;
+            .topbar {
+                display: flex;
+                justify-content: space-between;
+                background-color: $primaryBg;
+                padding: 0px 40px 0px 25px;
+                clip-path: polygon(1.2% 0%, 100% 0%, 100% 100%, 0% 100%);
+                align-items: last baseline;
+                .topbar-text ul {
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 10px;
+                    padding-left: 0px;
+                    a{
+                        color:$white;
+                        text-decoration: none;
+                    }
+                }
+                .topbar-button {
+                    display: flex;
+                    align-items: baseline;
+                    color: $white;
+                    ul{
+                        list-style: none;
+                    }
+                    .btn{
+                        color: $white;
+                    }
+
+                }
+            }
+            #navbarSupportedContent {
+                padding: 20px 40px 20px 10px;
+                background-color: $white;
+                gap: 10px;
+                .submit-btn{
+                    background-color: $primaryBtn;
+                    border-radius: 20px;
+                    padding: 7px 15px;
+                    color: white;
+                    &::hover{
+                        background-color:$primaryBg ;
+                    }
+                    }
+            }
+        }
+    }
+}
+
+
+
+/* Footer Widget Styles */
+
+#footer-widgets {
+    padding: 40px 0; // Adjust the padding as needed
+    background-color: #f8f8f8; // Set your desired background color
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    color: #333; // Set the title color
+    font-size: 18px; // Set the title font size
+    margin-bottom: 15px;
+}
+
+/* Adjust the styling for each column as needed */
+.col-md-3 {
+    text-align: left; // Align the content within each column
+}
+
+/* Additional Styling for Links and Text */
+.widget a {
+    color: #555; // Set link color
+    text-decoration: none;
+}
+
+.widget a:hover {
+    text-decoration: underline; // Add underline on hover
+}

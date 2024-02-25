@@ -1,1 +1,93 @@
-/*# sourceMappingURL=main.css.map */
+header .logo {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0px;
+  background-color: #07245F;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+header .header-content {
+  padding: 0px;
+}
+header .header-content .navbar {
+  padding: 0px;
+}
+header .header-content .navbar .topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0E3DD8;
+  padding: 0px 40px 0px 25px;
+  -webkit-clip-path: polygon(1.2% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(1.2% 0%, 100% 0%, 100% 100%, 0% 100%);
+  align-items: last baseline;
+}
+header .header-content .navbar .topbar .topbar-text ul {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0px;
+}
+header .header-content .navbar .topbar .topbar-text ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .header-content .navbar .topbar .topbar-button {
+  display: flex;
+  align-items: baseline;
+  color: #FFFFFF;
+}
+header .header-content .navbar .topbar .topbar-button ul {
+  list-style: none;
+}
+header .header-content .navbar .topbar .topbar-button .btn {
+  color: #FFFFFF;
+}
+header .header-content .navbar #navbarSupportedContent {
+  padding: 20px 40px 20px 10px;
+  background-color: #FFFFFF;
+  gap: 10px;
+}
+header .header-content .navbar #navbarSupportedContent .submit-btn {
+  background-color: #FF6B00;
+  border-radius: 20px;
+  padding: 7px 15px;
+  color: white;
+}
+header .header-content .navbar #navbarSupportedContent .submit-btn::hover {
+  background-color: #0E3DD8;
+}
+
+/* Footer Widget Styles */
+#footer-widgets {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget-title {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Adjust the styling for each column as needed */
+.col-md-3 {
+  text-align: left;
+}
+
+/* Additional Styling for Links and Text */
+.widget a {
+  color: #555;
+  text-decoration: none;
+}
+
+.widget a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */

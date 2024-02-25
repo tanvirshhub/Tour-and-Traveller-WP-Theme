@@ -13,10 +13,13 @@
 </head>
   <!-- Header start -->
     <header class="header">
-      <div class="container">
+      <div class="row">
+        <div class="col-md-3 logo">
+          <a href="#"><img src="assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="col-md-9 header-content">
           <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+            <div class="container-fluid d-block p-0 m-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,7 +30,8 @@
                       <li><a href="#">info@example.com</a></li>
                       <li><a href="#">(245) 2156 21453</a></li>
                     </ul>
-                    <div>
+                  </div>
+                    <div class="topbar-button">
                       <ul>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="parking-zone.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,13 +46,11 @@
                           </ul>
                         </li>
                       </ul>
+                        <button class="btn" type="submit">Login Now</button>
                     </div>
-                    <button>Login Now</button>
-
-                  </div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -74,16 +76,52 @@
                       <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                   </ul>
-                  <div>
-                    <button class="btn nav-submit" type="submit">Discover More</button>
+                  <div class="cart">
+                    <a href="#"><img src="assets/img/cart.png" alt=""></a>
                   </div>
+                  <div class="search-form">
+                    <button  class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-              </div>
-            </nav>
+
+                  <div>
+                    <button class="btn submit-btn" type="submit">Discover More</button>
+                  </div>
+                  <div class="nav-bar">
+                    <a href="#"><img src="assets/img/bar.png" alt=""></a>
+                  </div>
+
+                </div>
+            </div>
+          </nav> 
+        </div>
+
       </div>
+
   </header>
   <!-- Header end -->
 
+  <!-- hero area start  -->
+  
+  <!-- hero area end  -->
+
+  <!-- Footer start -->
+
+  <div id="footer-widgets" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <?php dynamic_sidebar('footer-column-1'); ?>
+        </div>
+        <div class="col-md-3">
+            <?php dynamic_sidebar('footer-column-2'); ?>
+        </div>
+        <div class="col-md-3">
+            <?php dynamic_sidebar('footer-column-3'); ?>
+        </div>
+        <div class="col-md-3">
+            <?php dynamic_sidebar('footer-column-4'); ?>
+        </div>
+    </div>
+</div>
 
 
        <!-- Fontawesome cdn -->
