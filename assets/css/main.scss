@@ -11,61 +11,137 @@ header{
         background-color: $secondaryBg;
         clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
     }
-    .header-content {
-        padding: 0px;
-        .navbar{
-            padding: 0px;
-            .topbar {
-                display: flex;
-                justify-content: space-between;
-                background-color: $primaryBg;
-                padding: 0px 40px 0px 25px;
-                clip-path: polygon(1.2% 0%, 100% 0%, 100% 100%, 0% 100%);
-                align-items: last baseline;
-                .topbar-text ul {
-                    color: $white;
-                    display: flex;
-                    align-items: center;
-                    list-style: none;
-                    gap: 10px;
-                    padding-left: 0px;
-                    a{
-                        color:$white;
-                        text-decoration: none;
-                    }
-                }
-                .topbar-button {
-                    display: flex;
-                    align-items: baseline;
-                    color: $white;
-                    ul{
-                        list-style: none;
-                    }
-                    .btn{
-                        color: $white;
-                    }
-
-                }
-            }
-            #navbarSupportedContent {
-                padding: 20px 40px 20px 10px;
-                background-color: $white;
-                gap: 10px;
-                .submit-btn{
-                    background-color: $primaryBtn;
-                    border-radius: 20px;
-                    padding: 7px 15px;
-                    color: white;
-                    &::hover{
-                        background-color:$primaryBg ;
-                    }
-                    }
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: $primaryBg;
+        padding: 0px 40px 0px 25px;
+        clip-path: polygon(1.2% 0%, 100% 0%, 100% 100%, 0% 100%);
+        align-items: last baseline;
+        .topbar-text ul {
+            color: $white;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+            padding-left: 0px;
+            a{
+                color:$white;
+                text-decoration: none;
             }
         }
+        .topbar-button {
+            display: flex;
+            align-items: baseline;
+            color: $white;
+            ul{
+                list-style: none;
+            }
+            .btn{
+                color: $white;
+            }
+
+        }
+    }
+     #navbarSupportedContent {
+        // padding: 20px 40px 20px 10px;
+        background-color: $white;
+        gap: 10px;
+    }
+    .nav-btns{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .fa-solid{
+            border: solid 1px black;
+            border-radius: 50%;
+            border-style: dashed;
+            padding: 10px;
+        }
+        .submit-btn{
+            background-color: $primaryBtn;
+            border-radius: 20px;
+            padding: 7px 15px;
+            color: white;
+            &::hover{
+                background-color:$primaryBg ;
+            }
+            }
     }
 }
 
+// 
+.footer {
+	background-image: url("/assets/img/Footer.png");
+	padding: 40px 0px 0px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    .content {
+        color: $white;
+        padding-top: 15px;
+    }
+    a, p, footer-tittle{
+        text-decoration: none;
+        color: $white;
+    }
+    .footer-content{
+        padding-top: 30px;
+        ul{
+            display: grid;
+            gap: 5px;
+            padding-left: 0px;
+            li{
+                list-style: none;
+            }
+        }
+        input {
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            color: $white;
+            background-color: #203453;
+        }
+        button {
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            background-color: $primaryBg;
+            color: $white;
+        }
 
+    }
+}
+
+.inner-copyright-text {
+	background: #132847;
+	text-align: center;
+	padding: 10px;
+    color: $white;
+    p{
+        margin-bottom: 0px;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}
+.inner-copyright-privacy{
+    background: $primaryBg;
+	text-align: center;
+	padding: 10px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}
 
 /* Footer Widget Styles */
 
